@@ -1,4 +1,7 @@
 def merge(left,right):
+  """ 
+  Function to merge two arrays.
+  """
   res = []
   i,j = 0, 0
   while len(res) < (len(left) + len(right)):
@@ -15,6 +18,9 @@ def merge(left,right):
   return res
 
 def merge_sort(arr):
+  """
+  Function to sort an array using merge sort algorithm.
+  """
   if len(arr) > 1:
     middle = len(arr) // 2
     left = merge_sort(arr[:middle])
